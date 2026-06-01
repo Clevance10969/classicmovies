@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ClevoCinema</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;background:#0a0a0f;color:#fff;margin:0;padding:0}
+header{background:#12121a;padding:15px 5%;border-bottom:1px solid #2a2a3a;display:flex;justify-content:space-between;align-items:center}
+.logo{color:#e50914;font-size:24px;font-weight:900;text-decoration:none}
+nav a{color:#a0a0b0;text-decoration:none;margin-left:20px;font-size:14px}
+nav a:hover{color:#fff}
+.hero{background:linear-gradient(180deg,rgba(10,10,15,0) 0%,#0a0a0f 100%),url(https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1920&q=80) center/cover;height:400px;display:flex;align-items:flex-end;padding:0 5% 40px}
+.hero h1{font-size:48px;margin:0}
+.hero h1 span{color:#e50914}
+.hero p{color:#a0a0b0;max-width:500px}
+main{padding:30px 5%}
+.section{margin-bottom:40px}
+.section h2{font-size:22px;margin-bottom:15px;border-left:4px solid #e50914;padding-left:12px}
+.movies{display:flex;gap:15px;overflow-x:auto;padding-bottom:10px}
+.movie{min-width:180px;cursor:pointer;text-decoration:none;color:#fff;display:block}
+.movie:hover{transform:scale(1.03);transition:0.2s}
+.poster{width:180px;height:270px;background:#1e1e2e;border-radius:8px;overflow:hidden;position:relative}
+.poster img{width:100%;height:100%;object-fit:cover}
+.year{position:absolute;top:8px;left:8px;background:rgba(0,0,0,0.8);padding:3px 8px;border-radius:3px;font-size:12px;font-weight:bold}
+.rating{position:absolute;top:8px;right:8px;background:#f5c518;color:#000;padding:3px 8px;border-radius:3px;font-size:11px;font-weight:bold}
+.title{font-size:14px;font-weight:600;margin-top:8px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.creator{font-size:12px;color:#6b6b7b;margin-top:2px}
+.pills{margin-bottom:25px}
+.pill{display:inline-block;padding:8px 16px;background:#12121a;border:1px solid #2a2a3a;color:#a0a0b0;border-radius:20px;text-decoration:none;margin-right:8px;font-size:13px;font-weight:600}
+.pill:hover,.pill.active{background:#e50914;color:#fff;border-color:#e50914}
+footer{text-align:center;padding:30px;color:#6b6b7b;font-size:12px;border-top:1px solid #2a2a3a}
+@media(max-width:600px){.hero h1{font-size:32px}.movie{min-width:140px}.poster{width:140px;height:210px}}
+</style>
+<base target="_blank">
+</head>
+<body>
+
+<header>
+<a href="index.html" class="logo">CLEVO CINEMA</a>
+<nav>
+<a href="index.html">Home</a>
+<a href="action.html">Action</a>
+<a href="animation.html">Animation</a>
+<a href="cars.html">Cars</a>
+<a href="all.html">All</a>
+</nav>
+</header>
+
+<div class="hero">
+<div>
+<h1>Watch Classic Movies <span>Free</span></h1>
+<p>Public domain films from the Internet Archive. No subscription. No ads.</p>
+</div>
+</div>
+
+<main>
+<div class="pills">
+<a href="index.html" class="pill active">All</a>
+<a href="action.html" class="pill">Action</a>
+<a href="animation.html" class="pill">Animation</a>
+<a href="cars.html" class="pill">Car Docs</a>
+<a href="classic.html" class="pill">Classics</a>
+<a href="documentary.html" class="pill">Documentary</a>
+</div>
+
+<div class="section">
+<h2>Action & Adventure</h2>
+<div class="movies">
+<a class="movie" href="https://archive.org/details/TheGeneral" target="_blank">
+<div class="poster"><img src="https://archive.org/services/img/TheGeneral" alt="The General"><div class="year">1926</div><div class="rating">9.0</div></div>
+<div class="title">The General</div><div class="creator">Buster Keaton</div>
+</a>
+<a class="movie" href="https://archive.org/details/SafetyLast" target="_blank">
+<div class="poster"><img src="https://archive.org/services/img/SafetyLast" alt="Safety Last"><div class="year">1923</div><div class="rating">8.1</div></div>
+<div class="title">Safety Last</div><div class="creator">Harold Lloyd</div>
+</a>
+<a class="movie" href="https://archive.org/details/TheMarkOfZorro" target="_blank">
+<div class="poster"><img src="https://archive.org/services/img/TheMarkOfZorro" alt="Mark of Zorro"><div class="year">1920</div><div class="rating">7.4</div></div>
+<div class="title">The Mark of Zorro</div><div class="creator">Douglas Fairbanks</div>
+</a>
+<a class="movie" href="https://archive.org/details/nosferatu1922" target="_blank">
+<div class="poster"><img src="https://archive.org/services/img/nosferatu1922" alt="Nosferatu"><div class="year">1922</div><div class="rating">7.9</div></div>
+<div class="title">Nosferatu</div><div class="creator">F.W. Murnau</div>
+</a>
+<a class="movie" href="https://archive.org/details/TheLostWorld" target="_blank">
+<div class="poster"><img src="https://archive.org/services/img/TheLostWorld" alt="Lost World"><div class="year">1925</div><div class="rating">7.0</div></div>
+<div class="title">The Lost World</div><div class="creator">Harry Hoyt</div>
+</a>
+<a class="movie" href="https://archive.org/details/ThePhantomOfTheOpera" target="_blank">
+<div class="poster"><img src="https://archive.org/services/img/ThePhantomOfTheOpera" alt="Phantom"><div class="year">1925</div><div class="rating">7.6</div></div>
+<div class="title">Phantom of the Opera</div><div class="creator">Rupert Julian</div>
+</a>
+</div>
+</div>
+
+<div class="section">
+<h2>Animation & Cartoons</h2>
+<div class="movies">
+<a class="movie" href="https://archive.org/details/superman_the_mechanical_monsters" target="_blank">
+<div class="poster"><img src="https://archive.org/services/img/superman_the_mechanical_monsters" alt="Superman"><div class="year">1941</div><div class="rating">7.8</div></div>
+<div class="title">Superman: Mechanical Monsters</div><div class="creator">Fleischer Studios</div>
+</a>
+<a class="movie" href="https://archive.org/details/BettyBoopMinnieTheMoocher" target="_blank">
+<div class="poster"><img src="https://archive.org/services/img/BettyBoopMinnieTheMoocher" alt="Betty Boop"><div class="year">1932</div><div class="rating">7.5</div></div>
+<div class="title">Betty Boop: Minnie the Moocher</div><div class="creator">Max Fleischer</div>
+</a>
+<a class="movie" href="https://archive.org/details/Popeye_the_Sailor_Meets_Sindbad_the_Sailor" target="_blank">
+<div class="poster"><img src="https://archive.org/services/img/Popeye_the_Sailor_Meets_Sindbad_the_Sailor" alt="Popeye"><div class="year">1936</div><div class="rating">7.3</div></div>
+<div class="title">Popeye Meets Sindbad</div><div class="creator">Fleischer Studios</div>
+</a>
+<a class="movie" href="https://archive.org/details/felix_the_cat" target="_blank">
+<div class="poster"><img src="https://archive.org/services/img/felix_the_cat" alt="Felix"><div class="year">1920</div><div class="rating">7.0</div></div>
+<div class="title">Felix the Cat</div><div class="creator">Pat Sullivan</div>
+</a>
+<a class="movie" href="https://archive.org/details/SteamboatWillie" target="_blank">
+<div class="poster"><img src="https://archive.org/services/img/SteamboatWillie" alt="Steamboat Willie"><div class="year">1928</div><div class="rating">7.5</div></div>
+<div class="title">Steamboat Willie</div><div class="creator">Walt Disney</div>
+</a>
+<a class="movie" href="https://archive.org/details/TheSkeletonDance" target="_blank">
+<div class="poster"><img src="https://archive.org/services/img/TheSkeletonDance" alt="Skeleton Dance"><div class="year">1929</div><div class="rating">7.6</div></div>
+<div class="title">The Skeleton Dance</div><div class="creator">Walt Disney</div>
+</a>
+</div>
+</div>
+
+<div class="section">
+<h2>Car Documentaries</h2>
+<div class="movies">
+<a class="movie" href="https://archive.org/details/DetroitDreamCruise1999" target="_blank">
+<div class="poster"><img src="https://archive.org/services/img/DetroitDreamCruise1999" alt="Dream Cruise"><div class="year">1999</div><div class="rating">7.0</div></div>
+<div class="title">Detroit Dream Cruise</div><div class="creator">Detroit Historical</div>
+</a>
+<a class="movie" href="https://archive.org/details/HotRodGang1958" target="_blank">
+<div class="poster"><img src="https://archive.org/services/img/HotRodGang1958" alt="Hot Rod"><div class="year">1958</div><div class="rating">5.5</div></div>
+<div class="title">Hot Rod Gang</div><div class="creator">American International</div>
+</a>
+<a class="movie" href="https://archive.org/details/The_Beautiful_Dream_The_Ford_Rotunda" target="_blank">
+<div class="poster"><img src="https://archive.org/services/img/The_Beautiful_Dream_The_Ford_Rotunda" alt="Ford"><div class="year">1962</div><div class="rating">6.5</div></div>
+<div class="title">Ford Rotunda</div><div class="creator">Ford Motor</div>
+</a>
+<a class="movie" href="https://archive.org/details/GM_around_the_world" target="_blank">
+<div class="poster"><img src="https://archive.org/services/img/GM_around_the_world" alt="GM"><div class="year">1957</div><div class="rating">6.0</div></div>
+<div class="title">GM Around the World</div><div class="creator">General Motors</div>
+</a>
+<a class="movie" href="https://archive.org/details/1956_Chevrolet_Sponsored_Film" target="_blank">
+<div class="poster"><img src="https://archive.org/services/img/1956_Chevrolet_Sponsored_Film" alt="Chevy"><div class="year">1956</div><div class="rating">6.5</div></div>
+<div class="title">1956 Chevrolet</div><div class="creator">Chevrolet</div>
+</a>
+<a class="movie" href="https://archive.org/details/The_Magic_of_Ford" target="_blank">
+<div class="poster"><img src="https://archive.org/services/img/The_Magic_of_Ford" alt="Magic Ford"><div class="year">1961</div><div class="rating">6.0</div></div>
+<div class="title">The Magic of Ford</div><div class="creator">Ford Motor</div>
+</a>
+</div>
+</div>
+
+<div class="section">
+<h2>Classic Hollywood</h2>
+<div class="movies">
+<a class="movie" href="https://archive.org/details/Metropolisrestored" target="_blank">
+<div class="poster"><img src="https://archive.org/services/img/Metropolisrestored" alt="Metropolis"><div class="year">1927</div><div class="rating">8.3</div></div>
+<div class="title">Metropolis</div><div class="creator">Fritz Lang</div>
+</a>
+<a class="movie" href="https://archive.org/details/night_of_the_living_dead" target="_blank">
+<div class="poster"><img src="https://archive.org/services/img/night_of_the_living_dead" alt="Night"><div class="year">1968</div><div class="rating">7.8</div></div>
+<div class="title">Night of the Living Dead</div><div class="creator">George Romero</div>
+</a>
+<a class="movie" href="https://archive.org/details/HisGirlFriday" target="_blank">
+<div class="poster"><img src="https://archive.org/services/img/HisGirlFriday" alt="His Girl"><div class="year">1940</div><div class="rating">7.8</div></div>
+<div class="title">His Girl Friday</div><div class="creator">Howard Hawks</div>
+</a>
+<a class="movie" href="https://archive.org/details/CC_1925_The_Gold_Rush" target="_blank">
+<div class="poster"><img src="https://archive.org/services/img/CC_1925_The_Gold_Rush" alt="Gold Rush"><div class="year">1925</div><div class="rating">8.1</div></div>
+<div class="title">The Gold Rush</div><div class="creator">Charlie Chaplin</div>
+</a>
+<a class="movie" href="https://archive.org/details/Sunrise1927" target="_blank">
+<div class="poster"><img src="https://archive.org/services/img/Sunrise1927" alt="Sunrise"><div class="year">1927</div><div class="rating">8.1</div></div>
+<div class="title">Sunrise</div><div class="creator">F.W. Murnau</div>
+</a>
+<a class="movie" href="https://archive.org/details/TheCabinetOfDr.Caligari1919" target="_blank">
+<div class="poster"><img src="https://archive.org/services/img/TheCabinetOfDr.Caligari1919" alt="Caligari"><div class="year">1920</div><div class="rating">8.0</div></div>
+<div class="title">The Cabinet of Dr. Caligari</div><div class="creator">Robert Wiene</div>
+</a>
+</div>
+</div>
+
+<div class="section">
+<h2>Documentaries</h2>
+<div class="movies">
+<a class="movie" href="https://archive.org/details/NASA_Apollo_11" target="_blank">
+<div class="poster"><img src="https://archive.org/services/img/NASA_Apollo_11" alt="Apollo 11"><div class="year">1969</div><div class="rating">8.5</div></div>
+<div class="title">Apollo 11</div><div class="creator">NASA</div>
+</a>
+<a class="movie" href="https://archive.org/details/Prelinger_PanamaCanal" target="_blank">
+<div class="poster"><img src="https://archive.org/services/img/Prelinger_PanamaCanal" alt="Panama"><div class="year">1913</div><div class="rating">7.0</div></div>
+<div class="title">The Panama Canal</div><div class="creator">Prelinger Archives</div>
+</a>
+<a class="movie" href="https://archive.org/details/TheWorldAtWar" target="_blank">
+<div class="poster"><img src="https://archive.org/services/img/TheWorldAtWar" alt="WWII"><div class="year">1942</div><div class="rating">7.5</div></div>
+<div class="title">The World at War</div><div class="creator">US Government</div>
+</a>
+<a class="movie" href="https://archive.org/details/Prelinger_DuckAndCover" target="_blank">
+<div class="poster"><img src="https://archive.org/services/img/Prelinger_DuckAndCover" alt="Duck"><div class="year">1952</div><div class="rating">6.5</div></div>
+<div class="title">Duck and Cover</div><div class="creator">US Civil Defense</div>
+</a>
+<a class="movie" href="https://archive.org/details/NASA_Skylab" target="_blank">
+<div class="poster"><img src="https://archive.org/services/img/NASA_Skylab" alt="Skylab"><div class="year">1973</div><div class="rating">7.5</div></div>
+<div class="title">Skylab</div><div class="creator">NASA</div>
+</a>
+<a class="movie" href="https://archive.org/details/NASA_Moonwalk_One" target="_blank">
+<div class="poster"><img src="https://archive.org/services/img/NASA_Moonwalk_One" alt="Moonwalk"><div class="year">1970</div><div class="rating">7.8</div></div>
+<div class="title">Moonwalk One</div><div class="creator">NASA</div>
+</a>
+</div>
+</div>
+
+</main>
+
+<footer>
+<p>ClevoCinema - Powered by Internet Archive</p>
+<p>All films are Public Domain or Creative Commons</p>
+</footer>
+
+</body>
+</html>
